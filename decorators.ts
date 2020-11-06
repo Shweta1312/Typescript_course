@@ -11,13 +11,13 @@ class Boat {
     console.log('Swish');
   }
 
-  
+
   anotherFunction(): void {
     console.log('Just a trial');
   }
 }
 
-//Decorator factory
+//Factory decorator
 function logError(message: string) {
   return function (target: any, key: string, desc: PropertyDescriptor): void {
     const method = desc.value;
